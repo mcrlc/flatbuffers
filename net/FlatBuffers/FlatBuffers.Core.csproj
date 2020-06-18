@@ -1,19 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>1.12.0</Version>
+    <Product>FlatBuffers</Product>
+    <Company>Google Inc.</Company>
+    <Authors>mcrlc</Authors>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://google.github.io/flatbuffers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mcrlc/flatbuffers</RepositoryUrl>
+    <PackageIcon>fpl_logo_small.png</PackageIcon>
+    <Description>An unofficial release of the FlatBuffers runtime library for .Net Core.</Description>
+  </PropertyGroup>
 
-    <ItemGroup>
-      <Compile Remove="Properties\**" />
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+  </ItemGroup>
 
-    <ItemGroup>
-      <EmbeddedResource Remove="Properties\**" />
-    </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Properties\**" />
+  </ItemGroup>
 
-    <ItemGroup>
-      <None Remove="Properties\**" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Remove="Properties\**" />
+    <None Include="..\..\fpl_logo_small.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
